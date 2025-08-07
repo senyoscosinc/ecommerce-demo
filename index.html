@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Demo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        (function() {
+            // Get your public key from EmailJS dashboard -> Account -> API Keys
+            emailjs.init("jgs-002r7Q0Wq4yOp"); // Replace this with your public key from EmailJS dashboard
+        })();
+    </script>
+</head>
+<body>
+    
+    <section id="home" class="hero">
+        <nav>
+            <h1 class="logo">FW</h1>
+            <div class="nav-links">
+                <div class="nav-link"><p>About</p><p>Contact</p></div>
+                <div><a href="#" id="cartButton" class="cart-button"><p>Cart(<span class="cart-count">0</span>)</p></a></div>
+            </div>
+            <!--<button class="dropdown-button">Menu</button>-->
+        </nav>
+        <div class="hero-content">
+            <h1>FURNITURE WORLD</h1>
+            <div class="hero-feature">
+                <p>Axion Laboratory Solutions is a cutting-edge provider of innovative laboratory equipment, services, and technologies, dedicated to empowering scientific research and enhancing operational efficiency across clinical, pharmaceutical, and industrial labs. We deliver tailored solutions that support precision, compliance, and progress in every experiment.</p>
+                <img src="assets/images/hero-pexels-casnafu.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="products">
+        <h1 class="product-section-heading">Our Products</h1>
+        <div class="product-categories">
+            <div class="category" id="category-test-tubes">
+                <div class="product-list" id="product-list-test-tubes">
+                    <!-- Products will be injected here by JS -->
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="business-overview">
+        <img src="assets/images/sofa-4.jpg" alt="">
+        <h1>Crafting Timeless Pieces</h1>
+        <p> 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris.
+
+            Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit. Etiam tempor. Ut ullamcorper, ligula eu tempor congue, eros est euismod turpis, id tincidunt sapien risus a quam. Maecenas fermentum consequat mi. Donec fermentum. Pellentesque malesuada nulla a mi. Duis sapien sem, aliquet nec, commodo eget, consequat quis, neque. Aliquam faucibus, elit ut dictum aliquet, felis nisl adipiscing sapien, sed malesuada diam lacus eget erat.
+            Cras mollis scelerisque nunc. Nullam arcu. Aliquam consequat. Curabitur augue lorem, dapibus quis, laoreet et, pretium ac, nisi. Aenean magna nisl, mollis quis, molestie eu, feugiat in, orci. In hac habitasse platea dictumst. Sed blandit, eros vel aliquam faucibus, purus ex euismod diam, a facilisis nulla erat vel leo.
+        </p>
+    </section>
+
+    <section class="reviews">
+        <h1>What our clients have to say</h1>
+        <div class="review-cards">
+            <div>
+                <img src="assets/images/profile-1.jpg" alt="">
+                <p>Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit. Etiam tempor.  Aliquam faucibus, elit ut dictum aliquet, felis nisl adipiscing sapien erat.</p>
+            </div>
+            <div>
+                <img src="assets/images/profile-2.jpg" alt="">
+                <p>Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit. Etiam tempor.  Aliquam faucibus, elit ut dictum aliquet, felis nisl adipiscing sapien erat.</p>
+    
+            </div>
+            <div>
+                <img src="assets/images/profile-3.webp" alt="">
+                <p>Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit. Etiam tempor.  Aliquam faucibus, elit ut dictum aliquet, felis nisl adipiscing sapien erat.</p>
+    
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Modal Structure -->
+    <div id="orderModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Place Your Order</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <form id="orderForm">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required pattern="[A-Za-z\s]+" title="Please enter a valid name (letters and spaces only)">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Please enter a valid email address">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required pattern="[0-9]{10,}" title="Please enter a valid phone number (minimum 10 digits)">
+                </div>
+                <div class="form-group">
+                    <label for="address">Delivery Address:</label>
+                    <textarea id="address" name="address" required minlength="10" title="Please enter a complete delivery address (minimum 10 characters)"></textarea>
+                </div>
+                <button type="submit" class="submit-button cta-button   ">Submit Order</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Product Details Modal -->
+    <div id="productModal" class="modal">
+        <div class="modal-content product-modal">
+            <div class="modal-header">
+                <h2>Product Details</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="product-details">
+                <img id="modalProductImage" style="width:100%; margin-bottom:1rem; display:none;"/>
+                <h1 id="modalProductName"></h1>
+                <p id="modalProductPrice" class="price"></p>
+                <div id="modalProductDescription"></div>
+                <div id="modalProductVariations" style="margin-bottom:1rem;"></div>
+                <div class="quantity-selector">
+                    <label for="modalQuantity">Quantity:</label>
+                    <div class="quantity-controls">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" id="modalQuantity" min="1" value="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                </div>
+                <button id="addToCartBtn" class="cta-button">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Shopping Cart Modal -->
+    <div id="cartModal" class="modal">
+        <div class="modal-content cart-modal">
+            <div class="modal-header">
+                <h2>Shopping Cart</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="cart-items">
+                <!-- Cart items will be dynamically added here -->
+            </div>
+            <div class="cart-summary">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span id="cartTotal">₵0.00</span>
+                </div>
+                <button id="checkoutBtn" class="cta-button">Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <section id="contact" class="contact">
+        <div class="footer">
+            <div class="site-map">
+                <h3>Site Map</h3>
+                <p>Home</p>
+                <p>Products</p>
+                <p>About Us</p>
+                <p>Privacy Policy</p>
+                <p>Terms of Service</p>
+            </div>
+            <div class="contact-info">
+                <h3>Contact Us</h3>
+                <p>furnitureworld@gmail.com</p>
+                <p>+233 54 479 1184</p>
+            </div>
+            <div class="socials">
+                <h3>Connect With Us</h3>
+                <p>Facebook</p>
+                <p>Instagram</p>
+                <p>X</p>
+                <p>Threads</p>
+            </div>
+        </div>
+        <h1>FURNITURE WORLD</h1>
+    </section>
+
+    <footer>
+        <p> &copy; 2025 Furniture World. All rights reserved. | Site built & managed by Senyosco's Inc &trade;</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
