@@ -154,7 +154,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div class="product-item" data-product-id="${product.id}">
                     <img src="${product.image}" alt="${product.name}">
                     <div class="product-info">
-                        <h1>${product.name}</h1>
+                        <h3>${product.name}</h3>
                         <p>GHS ${product.variations[0].price.toFixed(2)}<p>
                     </div>
                     <button class="view-details-btn">View Details</button>
@@ -274,13 +274,13 @@ document.addEventListener('DOMContentLoaded', function() {
             <div class="cart-item" data-product-id="${item.id}">
                 <img src="${item.image}" alt="${item.name}" class="cart-img">
                 <div class="cart-item-info">
-                    <h3>${item.name}</h3>
+                    <p>${item.name}</p>
                     <!--<p class="price">₵${item.price.toFixed(2)} each</p>-->
                 </div>
                 <div class="cart-item-quantity">
-                    <button class="quantity-decrease" data-cart-key="${item.cartKey}">−</button>
-                    <span>${item.quantity}</span>
                     <button class="quantity-increase" data-cart-key="${item.cartKey}">+</button>
+                    <span>${item.quantity}</span>
+                    <button class="quantity-decrease" data-cart-key="${item.cartKey}">−</button>
                 </div>
                 <div class="cart-item-total">
                     <h3>₵${(item.price * item.quantity)}</h3>
