@@ -21,7 +21,7 @@
     <nav>
         <h1 class="logo">FW</h1>
         <div class="nav-links">
-            <div class="nav-link"><p>About</p><p>Contact</p></div>
+            <div class="nav-link"><p>About</p><p id="activate-contact-modal">Contact</p></div>
             <div><a href="#" id="cartButton" class="cart-button"><p>Cart(<span class="cart-count">0</span>)</p></a></div>
         </div>
         <!--<button class="dropdown-button">Menu</button>-->
@@ -31,7 +31,7 @@
             <h1>FURNITURE WORLD</h1>
             <div class="hero-feature">
                 <p>At Furniture World, we make furnishing your space easy and fun. From sleek modern designs to cozy essentials, we’ve got everything to make your home or office look awesome. Quality, style, and affordability all in one place. Shop online, get fast delivery, and create the perfect vibe for your space—without breaking the bank.</p>
-                <img src="assets/images/hero-pexels-casnafu.jpg" alt="">
+                <img src="assets/images/hero-img.jpg" alt="">
             </div>
         </div>
     </section>
@@ -39,21 +39,20 @@
     <section id="products" class="products">
         <h1 class="product-section-heading">Our Products</h1>
         <div class="product-categories">
-            <div class="category" id="category-test-tubes">
-                <div class="product-list" id="product-list-test-tubes">
-                    <!-- Products will be injected here by JS -->
-                </div>
-            </div>
-            
+            <!--all products will be rendered here-->
         </div>
     </section>
 
     <section class="business-overview">
         <h1>Crafting Timeless Pieces</h1>
-        <img src="assets/images/sofa-4.jpg" alt="">
-        <p>At Furniture World, our mission is to provide exceptional, stylish, and functional furniture that enhances the quality of life for our customers. We are committed to delivering high-quality craftsmanship, innovative designs, and sustainable solutions that create comfortable, inspiring spaces for every home and business. We aim to build lasting relationships with our customers by offering personalized service, a diverse range of products, and an unwavering commitment to excellence.</p>
-        <p>What sets us apart is our dedication to craftsmanship and our unwavering commitment to customer satisfaction. We’ve built strong relationships with artisans, designers, and manufacturers from around the globe, ensuring that every piece we offer is crafted with the utmost care and precision. From the first sketch to the final delivery, we maintain a passion for delivering furniture that not only looks beautiful but also stands the test of time.</p>
-        <p>Looking ahead, Furniture World is committed to becoming the global leader in innovative, sustainable furniture. Our goal is to reshape the way people think about furniture by not only offering products that are stylish and functional but also environmentally responsible. As the demand for sustainable and eco-friendly designs increases, we’re excited to continue developing collections that meet those needs without sacrificing design or comfort.</p>
+        <div class="about-section">
+            <img src="assets/images/about-img.jpg" alt="">
+            <div>
+                <p>At Furniture World, our mission is to provide exceptional, stylish, and functional furniture that enhances the quality of life for our customers. We are committed to delivering high-quality craftsmanship, innovative designs, and sustainable solutions that create comfortable, inspiring spaces for every home and business. We aim to build lasting relationships with our customers by offering personalized service, a diverse range of products, and an unwavering commitment to excellence.</p>
+                <p>What sets us apart is our dedication to craftsmanship and our unwavering commitment to customer satisfaction. We’ve built strong relationships with artisans, designers, and manufacturers from around the globe, ensuring that every piece we offer is crafted with the utmost care and precision. From the first sketch to the final delivery, we maintain a passion for delivering furniture that not only looks beautiful but also stands the test of time.</p>
+                <p>Looking ahead, Furniture World is committed to becoming the global leader in innovative, sustainable furniture. Our goal is to reshape the way people think about furniture by not only offering products that are stylish and functional but also environmentally responsible. As the demand for sustainable and eco-friendly designs increases, we’re excited to continue developing collections that meet those needs without sacrificing design or comfort.</p>
+            </div>
+        </div>
         <h1>Our Goals</h1>
         <div class="goal-cards">
             <div class="goal-card">
@@ -164,6 +163,33 @@
                 </div>
                 <button id="checkoutBtn" class="cta-button">Proceed to Checkout</button>
             </div>
+        </div>
+    </div>
+
+    <!-- Contact Card Modal -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content contact-modal">
+            <div class="modal-header">
+                <h2>Contact Us</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="shop-details">
+                <h1 id="shop-name">Furniture World</h1>
+                <p id="shop-email">agbe3501@gmail.com</p>
+                <p id="shop-phone">+233 54 479 1184</p>
+            </div>
+            <div class="shop-location">
+                <h1>Find Us</h1>
+                <p>Number 1 Ave, <br>North Ridge, Accra-Ghana.</p>
+            </div>
+            <div class="shop-socials">
+                <h1>Follow Us On Our Socials</h1>
+                <p>Instagram</p>
+                <p>Facebook</p>
+                <p>Threads</p>
+                <p>X</p>
+            </div>
+            
         </div>
     </div>
 

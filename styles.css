@@ -123,7 +123,7 @@ nav{
     margin: 20px auto;
 }
 
-.category {
+.product-category {
     margin: 20px auto;
     padding: 20px 0px;
     border-bottom: 0.5px solid #202020;
@@ -207,7 +207,7 @@ nav{
         grid-template-columns: repeat(4, 1fr);
     }
     .product-item img{
-        height: 350px;
+        height: 300px;
         width: 100%;
     }
 }
@@ -292,10 +292,16 @@ nav{
         width: 98%;
     }
 
-    .business-overview img{
-        height: 500px;
-        width: 70%;
+    .about-section{
+        width: 100%;
         margin: 50px 0px;
+        padding: 20px;
+        display: flex;
+        gap: 50px;
+    }
+
+    .about-section img{
+        height: 400px;
     }
 
     .goal-cards{
@@ -713,6 +719,12 @@ footer{
     height: 100px;
     width: 100%;
     border: 1px solid #202020;
+}
+
+/*Contact Modal*/
+.shop-details, .shop-location, .shop-socials{
+    width: 95%;
+    margin: 20px auto;
 }
 
 

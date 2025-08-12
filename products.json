@@ -1,0 +1,140 @@
+[
+    {
+        "id": 1,
+        "name": "Velora Luxe Armchair",
+        "description": "A plush, velvet-upholstered armchair with deep cushioning and a modern silhouette, perfect for adding a touch of luxury to any living space.",
+        "category": "Chairs",
+        "variations": [
+            {"label": "White Cloth", "price": 750, "image": {"low": "assets/images/thumbs/armchair_1.jpg", "high": "assets/images/full/armchair-1.jpg"}}
+        ]
+    },
+    {
+        "id": 2,
+        "name": "HavenCraft Lounge Chair",
+        "description": "Crafted with a solid wooden frame and breathable fabric, this chair combines style and comfort, making it ideal for cozy reading corners.",
+        "category": "Chairs",
+        "variations": [
+            {"label": "Light Blue Cloth", "price": 950, "image": {"low": "assets/images/thumbs/armchair_2.jpg", "high": "assets/images/full/armchair-2.jpg"}},
+            {"label": "Yellow Cloth", "price": 950, "image": {"low": "assets/images/thumbs/armchair_2.jpg", "high": "assets/images/full/armchair-2.jpg"}},
+            {"label": "Green Corduroy", "price": 950, "image": {"low": "assets/images/thumbs/armchair_2.jpg", "high": "assets/images/full/armchair-2.jpg"}}
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Briarwood Comfort Chair",
+        "description": "Featuring a sturdy oak frame and extra-wide cushions, this armchair offers unmatched relaxation for movie nights or afternoon naps.",
+        "category": "Chairs",
+        "variations": [
+            {"label": "Dark Wine Velvet", "price": 1130, "image": {"low": "assets/images/thumbs/armchair_3.jpg", "high": "assets/images/full/armchair-3.jpg"}}
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Serenity Swivel Seat",
+        "description": "A sleek, rotating armchair with ergonomic support and a minimalist design, perfect for home offices or modern lounge areas.",
+        "category": "Chairs",
+        "variations": [
+            {"label": "White Cloth", "price": 900, "image": {"low": "assets/images/thumbs/armchair_4.jpg", "high": "assets/images/full/armchair-4.jpg"}}
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Crestwood Classic Armchair",
+        "description": " A timeless armchair with rolled arms, button-tufted detailing, and rich leather upholstery, bringing elegance to both traditional and contemporary interiors.",
+        "category": "Chairs",
+        "variations": [
+            {"label": "White Leather", "price": 1200, "image": {"low": "assets/images/thumbs/armchair_5.jpg", "high": "assets/images/full/armchair-5.jpg"}},
+            {"label": "Brown Leather", "price": 1100, "image": {"low": "assets/images/thumbs/armchair_5.jpg", "high": "assets/images/full/armchair-5.jpg"}}
+        ]
+    },
+    {
+        "id": 6,
+        "name": " The Haven Chair",
+        "description": "A plush retreat for your living space, The Haven Chair combines deep cushioning with soft fabric to create the ultimate relaxation spot. Perfect for evenings with a book or quiet coffee mornings.",
+        "category": "Chairs",
+        "variations": [
+            {"label": "Black Leather", "price": 750, "image": {"low": "assets/images/thumbs/armchair_6.jpg", "high": "assets/images/full/armchair-6.jpg"}}
+        ]
+    },
+    {
+        "id": 7,
+        "name": "The Regent Armchair",
+        "description": "Majestic yet inviting, The Regent boasts refined lines, a high backrest, and elegant armrests. Upholstered in premium fabric, it offers both style and posture support for modern and traditional interiors.",
+        "category": "Chairs",
+        "variations": [
+            {"label": "Mint Green Cloth", "price": 1215, "image": {"low": "assets/images/thumbs/armchair_7.jpg", "high": "assets/images/full/armchair-8.jpg"}}
+        ]
+    },
+    {
+        "id": 8,
+        "name": "Cloud Nine Lounger",
+        "description": "Sink in and float away—Cloud Nine’s ultra-soft cushioning and oversized seat make it feel like sitting on a fluffy embrace. Ideal for lazy Sundays and binge-watching marathons.",
+        "category": "Chairs",
+        "variations": [
+            {"label": "Beige Cloth", "price": 1700, "image": {"low": "assets/images/thumbs/armchair_8.jpg", "high": "assets/images/full/armchair-9.jpg"}}
+        ]
+    },
+    {
+        "id": 9,
+        "name": "The Ember Chair",
+        "description": "With warm tones and cozy padding, The Ember adds a welcoming glow to any room. Its sturdy frame and gentle curves promise both durability and everyday comfort.",
+        "category": "Chairs",
+        "variations": [
+            {"label": "Beige Cloth", "price": 1500, "image": {"low": "assets/images/thumbs/armchair_9.jpg", "high": "assets/images/full/armchair-10.jpg"}}
+        ]
+    },
+    {
+        "id": 10,
+        "name": "Atlas Armchair",
+        "description": "Built for presence, the Atlas features bold proportions, structured upholstery, and a solid base—making it a striking statement piece that anchors your space.",
+        "category": "Chairs",
+        "variations": [
+            {"label": "Brown Wood", "price": 750, "image": {"low": "assets/images/thumbs/armchair_10.jpg", "high": "assets/images/full/chair-1.jpg"}}
+        ]
+    },
+    {
+        "id": 11,
+        "name": "The Serene Sofa",
+        "description": "A soft, inviting centerpiece designed for pure relaxation. The Serene Sofa features plush cushions, a low profile, and breathable upholstery—perfect for creating a calm, welcoming atmosphere.",
+        "category": "Sofas",
+        "variations": [
+            {"label": "Mocha Brown Leather", "price": 7500, "image": {"low": "assets/images/thumbs/sofa-1.jpg", "high": "assets/images/full/sofa-1.jpg"}}
+        ]
+    },
+    {
+        "id": 12,
+        "name": "Horizon Modular Sofa",
+        "description": "A versatile seating solution for any space. With its modular design, the Horizon adapts to your lifestyle—whether you’re hosting guests or enjoying a quiet evening.",
+        "category": "Sofas",
+        "variations": [
+            {"label": "Mocha Brown Leather", "price": 7500, "image": {"low": "assets/images/thumbs/sofa-2.jpg", "high": "assets/images/full/sofa-2.jpg"}}
+        ]
+    },
+    {
+        "id": 13,
+        "name": "The Loft Lounge",
+        "description": "Modern and sleek, The Loft combines clean lines with deep seating for a minimalist yet cozy vibe. Ideal for contemporary homes with a love for style and comfort.",
+        "category": "Sofas",
+        "variations": [
+            {"label": "Mocha Brown Leather", "price": 7500, "image": {"low": "assets/images/thumbs/sofa-3.jpg", "high": "assets/images/full/sofa-3.jpg"}}
+        ]
+    },
+    {
+        "id": 14,
+        "name": "Cloudrest Sectional",
+        "description": "Sink into the Cloudrest’s oversized cushions and soft-touch fabric. Its spacious design is perfect for families, movie nights, or anyone who loves stretching out in comfort.",
+        "category": "Sofas",
+        "variations": [
+            {"label": "Mocha Brown Leather", "price": 7500, "image": {"low": "assets/images/thumbs/sofa-4.jpg", "high": "assets/images/full/sofa-4.jpg"}}
+        ]
+    },
+    {
+        "id": 15,
+        "name": "Solace Two-Seater",
+        "description": "Compact yet luxurious, the Solace offers exceptional comfort in a space-friendly size. Great for apartments, reading corners, or intimate living areas.",
+        "category": "Sofas",
+        "variations": [
+            {"label": "Mocha Brown Leather", "price": 7500, "image": {"low": "assets/images/thumbs/sofa-5.jpg", "high": "assets/images/full/sofa-8.jpg"}}
+        ]
+    }
+]
